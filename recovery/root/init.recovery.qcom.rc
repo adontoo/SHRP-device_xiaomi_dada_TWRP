@@ -54,8 +54,6 @@ on property:twrp.modules.loaded=true
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
     start health-hal-2-1
-    chmod 0664 /sys/class/touch/touch_dev/touch_thp_ic_cmd
-    chmod 0664 /sys/class/touch/touch_dev/touch_thp_ic_cmd_dada
     start vibratorfeature-hal-service
     start touch_report
     stop vendor.qseecomd
