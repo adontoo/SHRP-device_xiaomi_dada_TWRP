@@ -56,8 +56,8 @@ on property:twrp.modules.loaded=true
     start health-hal-2-1
     chmod 0664 /sys/class/touch/touch_dev/touch_thp_ic_cmd
     chmod 0664 /sys/class/touch/touch_dev/touch_thp_ic_cmd_dada
-    start touch_report
     start vibratorfeature-hal-service
+    start touch_report
     stop vendor.qseecomd
     start vendor.qseecomd
     umount /firmware
