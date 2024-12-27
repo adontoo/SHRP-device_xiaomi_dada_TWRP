@@ -2,7 +2,7 @@
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
-on init
+on boot
     start vendor.qseecomd
 
 service vendor.qseecomd /vendor/bin/qseecomd

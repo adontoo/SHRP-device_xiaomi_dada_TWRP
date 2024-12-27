@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2023 The Android Open Source Project
+# Copyright (C) 2024 The Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_fuxi.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_dada.mk
 
-COMMON_LUNCH_CHOICES := twrp_fuxi-eng
+COMMON_LUNCH_CHOICES := twrp_dada-eng
