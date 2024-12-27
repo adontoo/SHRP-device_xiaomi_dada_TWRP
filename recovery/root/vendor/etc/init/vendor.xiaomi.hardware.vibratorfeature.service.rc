@@ -88,5 +88,5 @@ service vibratorfeature-hal-service /vendor/bin/hw/vendor.xiaomi.hardware.vibrat
     setenv RICHTAP_DEVICE_PATH  /dev/qcom_haptic
     setenv ENV_RICHTAP_CONFIG_PATH /vendor/etc/aac_richtap.config
     setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib64/hw:/system/lib64:/sbin
-    disable
+    disabled
     seclabel u:r:recovery:s0

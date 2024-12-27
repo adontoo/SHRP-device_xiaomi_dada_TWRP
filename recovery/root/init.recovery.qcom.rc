@@ -55,7 +55,7 @@ on property:twrp.modules.loaded=true
     wait /sys/class/power_supply/battery
     start health-hal-2-1
     start vibratorfeature-hal-service
-    start touch_report
+    start touchfeature-service
     stop vendor.qseecomd
     start vendor.qseecomd
     umount /firmware
