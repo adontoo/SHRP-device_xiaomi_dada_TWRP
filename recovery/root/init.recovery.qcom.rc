@@ -46,6 +46,9 @@ on boot
     setprop sys.usb.config adb
 
 on property:twrp.modules.loaded=true
+    # Mount persist
+    mkdir /mnt/vendor/persist
+    mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist ro
     # Mount firmware
     mkdir /firmware
     mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro
@@ -53,9 +56,14 @@ on property:twrp.modules.loaded=true
     wait /sys/kernel/boot_adsp/boot
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
+    start vendor.qseecomd
+    start touch_report
     start health-hal-2-1
     start vibratorfeature-hal-service
-    start touch_report
-    stop vendor.qseecomd
-    start vendor.qseecomd
     umount /firmware
+
+on property:vendor.sys.listeners.registered=true
+    start vendor.secure_element
+    start vendor.gatekeeper_default
+    start vendor.keymint-qti
+    start vendor.weaver_hal_service
