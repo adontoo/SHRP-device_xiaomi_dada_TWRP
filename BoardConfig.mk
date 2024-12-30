@@ -145,6 +145,7 @@ TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko synaptics_tcm2.ko qti_battery_charger.ko"
+TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone28/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_BACKUP_EXCLUSIONS := /data/fonts
