@@ -163,3 +163,23 @@ TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp" # CPU-0-0-0
 TW_BACKUP_EXCLUSIONS := /data/fonts
 TW_DEVICE_VERSION := Xiaomi_15-A15
+
+# SHRP Flags
+SHRP_DEVICE_CODE := dada
+SHRP_PATH := device/xiaomi/$(SHRP_DEVICE_CODE)
+SHRP_MAINTAINER := adontoo
+SHRP_REC_TYPE := Normal
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_HAS_RECOVERY_PARTITION := true
+SHRP_AB := true
+SHRP_EDL_MODE := 1
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_DARK := true
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/backlight/panel0-backlight/brightness
+SHRP_FLASH_MAX_BRIGHTNESS := 2047
