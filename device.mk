@@ -16,8 +16,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 # Configure emulated_storage.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Configure twrp common.mk
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Configure pbrp common.mk
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_PACKAGES += \
     bootctrl.xiaomi_sm8750.recovery \
